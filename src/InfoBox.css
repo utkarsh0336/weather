@@ -5,6 +5,7 @@
 .cardContainer{
     display: flex;
     justify-content: center;
+    background-size: contain;
 }
 
 .cardContent{

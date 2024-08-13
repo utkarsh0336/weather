@@ -1,12 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body, html {
+  height: 100%;
+}
 .bg {
     /* The image used */
-    background-image: url("https://img.freepik.com/free-vector/thunder-clouds-background-vector-green-with-glittery-cute-doodle-illustration-kids_53876-105742.jpg?size=626&ext=jpg");
-  
-    /* Full height */
-    height: 100%;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1561470508-fd4df1ed90b2?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center center; /* Center the image */
+    background-attachment: fixed; /* Fix the image so it doesn’t scroll with the content */
   }

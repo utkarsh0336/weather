@@ -3,6 +3,7 @@ import Login from "./components/Users/Forms/Login";
 import RegisterForm from "./components/Users/Forms/RegisterForm";
 import WeatherApp from "./WeatherApp"
 import Navbar from "./Navbar";
+import AuthRoute from "./components/AuthRoute/AuthRoute";
 function App() {
   
   return (
@@ -10,7 +11,7 @@ function App() {
    <Navbar/>
       <Routes>
       
-        <Route path="/" element={<WeatherApp />} />
+        <Route path="/" element={<AuthRoute><WeatherApp /></AuthRoute>} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<RegisterForm />} />
         
